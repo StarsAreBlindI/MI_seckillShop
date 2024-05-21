@@ -1,0 +1,621 @@
+/* 顶部广告 */
+.topAd {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.topAd img {
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    /* 居中 */
+    transform: translateX(-50%);
+}
+
+/* 导航栏 */
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    height: 2500px;
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+/* 下载框 */
+.download {
+    width: 110px;
+    height: 0px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    margin-left: -80px;
+    overflow: hidden;
+}
+
+.download img {
+    width: 90px;
+    margin: 10px 10px 0;
+}
+
+.download p {
+    color: #333;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    margin: -10px auto;
+}
+
+.topBar a:hover>.download {
+    height: 130px;
+}
+
+/* 去除黑点 */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topBar {
+    /* border: 1px solid black; */
+    background-color: #333;
+    height: 40px;
+}
+
+.container {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    width: 1226px;
+}
+
+/*伪元素清理浮动，消除塌陷*/
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.container::after,
+.clearfix::after {
+    clear: both;
+}
+
+/* 设置左栏a标签居中 */
+.topBar a {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.topBar a:hover {
+    color: #fff;
+}
+
+.topBar-nav {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+}
+
+.topBar-nav span {
+    font-size: 12px;
+    color: #424242;
+    font-family: sans-serif;
+    margin: 0.5em;
+}
+
+.topBar-info,
+.topBar-cart {
+    float: right;
+}
+
+/* 行内转换块级元素 */
+.topBar-cart a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 120px;
+    background-color: #424242;
+}
+
+.topBar-cart a:hover {
+    background-color: #fff;
+    color: #ff6700;
+}
+
+.topBar-cart span {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.topBar-cart i {
+    font-size: 20px;
+    line-height: 18px;
+    margin-right: 4px;
+    vertical-align: -3px;
+}
+
+/* 设置右栏a标签居中 */
+.topBar-info {
+    margin-right: 15px;
+}
+
+.topBar-info a {
+    float: left;
+    padding: 0 5px;
+    line-height: 40px;
+    height: 40px;
+}
+
+.topBar-info span {
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #424242;
+    line-height: 40px;
+    height: 40px;
+}
+
+.topBar-info .sep {
+    padding: 0 10px;
+}
+
+/* 头部 */
+.header {
+    height: 100px;
+}
+
+.header-logo {
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+    height: 55px;
+}
+
+.header-logo a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    background: #ff6700 url(../img/mi-logo.png) no-repeat 50% 50%;
+}
+
+.header-logo a:hover {
+
+    background: #ff6700 url(../img/home.png) no-repeat 50% 50%;
+}
+
+/* 字体隐藏 */
+.header-logo .lr {
+    text-align: left;
+    text-indent: -99999em;
+}
+
+/* header-nav */
+.header-nav {
+    float: left;
+    width: 820px;
+    height: 100px;
+}
+
+.header-nav .nav-list {
+    width: 820px;
+    height: 88px;
+    font-size: 16px;
+    padding: 12px 0 0 30px;
+}
+
+.header-nav .nav-list .nav-category {
+    float: left;
+    width: 127px;
+    padding: 0 15px 0 0;
+}
+
+.header-nav .nav-list .nav-category a {
+    display: block;
+    padding: 26px 0 38px;
+    text-align: right;
+    color: #333;
+}
+
+.header-nav .nav-list .nav-item {
+    float: left;
+}
+
+.header-nav .nav-list .nav-item a {
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+}
+
+.header-nav .nav-list .nav-item a:hover {
+    color: #ff6700;
+}
+
+.header-search {
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+/* 搜索 */
+.header-search .search-form {
+    position: relative;
+    /*相对于表单做定位*/
+    display: block;
+    width: 296px;
+    height: 50px;
+}
+
+.header-search .search-form .search-text {
+    position: absolute;
+    top: 0;
+    right: 51px;
+    display: block;
+    width: 245px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.header-search .search-form .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    display: block;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    background: #fff;
+    color: #616161;
+    outline: 0;
+}
+
+.header-search .search-form .search-btn:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+/* 主体 */
+.seckill {
+    background-color: #f5f5f5;
+}
+
+.seckill-head {
+    margin-top: 19px;
+    height: 170px;
+    background: url(../img/seckill-head.jpg) no-repeat 50% 0;
+}
+
+.seckill-nav {
+    margin: -68px 0 22px;
+}
+
+.seckill-navfixed {
+    position: fixed;
+    top: 60px;
+}
+
+.seckill-nav ul {
+    height: 68px;
+    background: #414141;
+}
+
+.seckill-nav li {
+    display: block;
+    float: left;
+    color: #fff;
+    width: 20%;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.seckill-nav li em {
+    display: inline-block;
+    margin-left: 30px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.seckill-nav li span {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.seckill-nav .active {
+    background: #f1393a;
+}
+
+.seckill-nav ul li span em {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 0;
+    font-style: normal;
+    text-align: left;
+    line-height: 20px;
+}
+
+.seckill-goods .active {
+    display: block;
+}
+
+.seckill-goods ul {
+    display: none;
+    margin-right: -13px;
+}
+
+.seckill-goods li {
+    float: left;
+    width: 400px;
+    height: 190px;
+    background-color: #fff;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    transition: all 0.2s linear;
+}
+
+.seckill-goods li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.seckill-goods .bg {
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+
+.seckill-goods .bg img {
+    height: 190px;
+}
+
+.seckill-goods .info {
+    margin-left: 210px;
+    width: 190px;
+    height: 190px;
+    padding-top: 30px;
+}
+
+.seckill-goods .info .name {
+    font-size: 16px;
+    color: #333;
+    height: 16px;
+    line-height: 16px;
+    /*名称不换行，超出部分隐藏*/
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.seckill-goods .info .tips {
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+.seckill-goods .info .price {
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.seckill-goods .info .price del {
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 10px;
+}
+
+.seckill-goods .info .btn {
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    border: 1px solid #f1393a;
+    margin-top: 15px;
+}
+
+.seckill-goods .info .person {
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.seckill-notice {
+    font-size: 12px;
+    color: #999;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+/* 侧边栏 */
+.sidebar {
+    position: fixed;
+    top: 870px;
+    right: 12px;
+}
+
+.sidebar .primary-btn {
+    width: 63px;
+    height: 63px;
+    margin-top: 6px;
+    padding: 8px 0 6px;
+    box-sizing: border-box;
+    border: 1px solid #e3e5e7;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sidebar .primary-btn:hover {
+    color: #ff6700;
+}
+
+.sidebar .primary-btn i {
+    font-size: 20px;
+}
+
+#top-btn{
+    display: none;
+}
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 1226px;
+}
+
+.footer-service {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-service li {
+    font-size: 15px;
+    float: left;
+    width: 20%;
+    border-right: 1px solid #b0b0b0;
+    box-sizing: border-box;
+}
+
+.footer-service li:last-child {
+    border-right: 0;
+}
+
+.footer-service i {
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.footer-service a {
+    color: #616161;
+}
+
+.footer-service a:hover {
+    color: #ff6700;
+}
+
+.footer-link {
+    width: 100%;
+    height: 172px;
+    padding: 40px 0;
+}
+
+.footer-link ul {
+    float: left;
+    width: 160px;
+    text-align: left;
+    color: #424242;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-link ul a {
+    font-size: 12px;
+    color: #757575;
+}
+
+.footer-link ul li {
+    margin-top: 10px;
+}
+
+.footer-link ul a:hover {
+    color: #ff6700;
+}
+
+.footer-aside {
+    width: 250px;
+    height: 111px;
+    border-left: 1px solid #e0e0e0;
+    float: right;
+    color: #616161;
+}
+
+.footer-aside .tel {
+    font-size: 22px;
+    line-height: 8px;
+    color: #ff6700;
+    margin-top: 12px;
+}
+
+.footer-aside .time {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.kefu {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ff6700;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #ff6700;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+
+.kefu:hover {
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+.follow {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.follow img {
+    width: 24px;
+    margin-left: 6px;
+    position: relative;
+    top: 7px;
+}
