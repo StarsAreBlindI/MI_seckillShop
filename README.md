@@ -1,9 +1,9 @@
 ﻿## 一、效果图
 
 主界面：
-![](./img/1.png)
+![](./img/2-1.png)
 登录注册界面：
-![](./img/2.png)
+![](./img/2-2.png)
 
 ## 二、预览网址
 
@@ -13,7 +13,7 @@
 
 ### 1.使用active和onclick实现单页面切换
 
-![](./img/3.png)
+![](./img/2-3.png)
 
 关键代码：
 
@@ -50,7 +50,7 @@ function showlist() {
 </script>
 ```
 ### 2.使用onclick和scrollTop滚轮事件监听实现回到顶部侧边边栏功能
-![](./img/4.png)
+![](./img/2-4.png)
 关键代码：
 
 ```html
